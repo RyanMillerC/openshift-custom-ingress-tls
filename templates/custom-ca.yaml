@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
   ca.crt: |
-    {{- .Files.Get "hub-cert-tls/ca.crt" | nindent 4 }}
+    {{- .Files.Get "tls/ca.crt" | nindent 4 }}
 kind: ConfigMap
 metadata:
   name: custom-ca
