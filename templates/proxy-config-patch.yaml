@@ -1,13 +1,13 @@
 apiVersion: redhatcop.redhat.io/v1alpha1
 kind: Patch
 metadata:
-  name: custom-ca
+  name: ingress-custom-ca
   namespace: openshift-config
 spec:
   serviceAccountRef:
     name: default
   patches:
-    custom-ca:
+    ingress-custom-ca:
       targetObjectRef:
         apiVersion: config.openshift.io/v1
         kind: Proxy
@@ -15,5 +15,5 @@ spec:
       patchTemplate: |
         spec:
           trustedCA:
-            name: custom-ca
+            name: ingress-custom-ca
       patchType: application/merge-patch+json

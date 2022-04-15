@@ -6,6 +6,6 @@ data:
     {{- .Files.Get "tls/tls.key" | nindent 4 }}
 kind: Secret
 metadata:
-  name: custom-tls
+  name: ingress-custom-tls
   namespace: openshift-ingress
 type: kubernetes.io/tls
