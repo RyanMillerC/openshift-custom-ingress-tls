@@ -1,0 +1,5 @@
+# All paths are relative to the repo directoy (directory this file is in)
+tls:
+  certPath: tls/tls.crt
+  keyPath: tls/tls.key
+  caPath: tls/ca.crt

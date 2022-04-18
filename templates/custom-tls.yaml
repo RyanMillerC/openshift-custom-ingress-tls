@@ -1,9 +1,9 @@
 apiVersion: v1
 stringData:
   tls.crt: |
-    {{- .Files.Get "tls/tls.crt" | nindent 4 }}
+    {{- .Files.Get .Values.tls.certPath | nindent 4 }}
   tls.key: |
-    {{- .Files.Get "tls/tls.key" | nindent 4 }}
+    {{- .Files.Get .Values.tls.keyPath | nindent 4 }}
 kind: Secret
 metadata:
   name: custom-ingress-tls
