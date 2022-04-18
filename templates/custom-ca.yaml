@@ -4,5 +4,5 @@ data:
     {{- .Files.Get "tls/ca.crt" | nindent 4 }}
 kind: ConfigMap
 metadata:
-  name: ingress-custom-ca
+  name: custom-ingress-ca
   namespace: openshift-config
