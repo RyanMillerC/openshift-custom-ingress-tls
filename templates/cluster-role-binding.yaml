@@ -1,3 +1,6 @@
+# This cluster role binding is used to patch cluster configurations with
+# the Patch Operator. This uses cluster-admin but a pruned custom role
+# could be used if cluster-admin is not desirable due to security concerns.
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:

@@ -1,3 +1,5 @@
+# This service account is used by the Patch Operator to patch cluster
+# configurations.
 kind: ServiceAccount
 apiVersion: v1
 metadata:
